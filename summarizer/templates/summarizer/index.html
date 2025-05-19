@@ -1,0 +1,76 @@
+<!-- summarizer/templates/summarizer/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Nepali Summarizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Optional: Font Awesome for icons -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .about-us {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .get-started {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .get-started a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745; /* Green */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .get-started a:hover {
+            background-color: #218838; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nepali Text Summarizer</h1>
+</header>
+
+<div class="container">
+    <div class="about-us">
+        <h2>About Us</h2> 
+        <p>Welcome to the Nepali Text Summarizer! Our goal is to provide a simple and effective way to summarize lengthy texts in Nepali. 
+            Whether you're a student looking to condense your study materials or a professional needing quick insights from reports, our tool is here 
+            to help you save time and improve productivity specifically for nepali finacial news articles and paragraphs.</p>
+    </div>
+
+    <div class="get-started">
+        <h2>Get Started</h2>
+        <p>Ready to summarize your text? Click the button below to begin!</p>
+        <a href="{% url 'summarize' %}">Get Started</a> <!-- This will link to form.html -->
+    </div>
+</div>
+
+</body>
+</html>

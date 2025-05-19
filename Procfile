@@ -1,0 +1,1 @@
+web: gunicorn nepali_summarizer.wsgi:application 
