@@ -1,7 +1,12 @@
 import numpy as np
+import os
+from django.conf import settings  # Add this at the top
+
+# Define the path relative to project root
+embeddings_file_path = os.path.join(settings.BASE_DIR, 'data', 'Embeddings.txt')
 
 #defining the path to our embeddings file
-embeddings_file_path = r"C:\Users\Anuz\OneDrive\Desktop\excel work\Embeddings.txt"
+#embeddings_file_path = r"C:\Users\Anuz\OneDrive\Desktop\excel work\Embeddings.txt"
 
 #initializing an empty dictionary to store embeddings
 embeddings = {}
